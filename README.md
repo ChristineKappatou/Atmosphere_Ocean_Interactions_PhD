@@ -7,6 +7,8 @@ To add the GitHub extention on Jupyter Lab in the correct environment :
 1. pip install jupyterlab-git
 2. jupyter serverextension enable --py jupyterlab_git
 
+################# I disagree with this part today (03/01/2026) #################################################
+
 To "see" your folder in the Git Environment of the extention and then push to the repository:
 
 1. git init #Initialize git in your notebook folder
@@ -17,9 +19,13 @@ To "see" your folder in the Git Environment of the extention and then push to th
 5. git remote add origin https://github.com/USERNAME/REPO_NAME.git
 6. git push -u origin main
 
-7. git add your_notebook.ipynb # sync your changes with GitHub
-8. git commit -m "Updated analysis"
-9. git push
+###################### you should rather (for now) ############################### 
+
+copy everything into the Atmosphee_Ocean_Interactions_PhD FOLDER. This folder is directly connected to this repo. Then:
+
+8. git add your_notebook.ipynb # sync your changes with GitHub
+9. git commit -m "Updated analysis"
+10. git push
 
 The steps you follow to access your NIRD account and files:
 
