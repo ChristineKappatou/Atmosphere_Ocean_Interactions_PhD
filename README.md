@@ -55,3 +55,16 @@ Files from NIRD:
 8. Open a new terminal window (so you're on local) and start listening to the port on nird: 'ssh -L 8080:localhost:8080 username@loginX.nird.sigma2.no',  X is the number of the login node you run jupyter on.
 
 9. Open the link from the nird window in browser or just do 'localhost:8080' in your browser.
+
+
+#Updating NIRD with the data you download:
+
+cd /datalake/NS9560K/ESGF/rawdata/model
+
+mkdir: folder with your name if it doesn't exist to dump the data into
+
+./move2autosort.sh "/path"
+
+might take some time
+
+plus it renews every half an hour
