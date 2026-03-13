@@ -34,7 +34,7 @@ def yearly_avg(ds):
     """Calculate yearly weighted average from monthly means."""
     
     month_length = ds.time.dt.days_in_month
-    
+
     def weighted_mean_year(x):
         # Select weights for that specific year's time subset
         w = month_length.sel(time=x.time)
