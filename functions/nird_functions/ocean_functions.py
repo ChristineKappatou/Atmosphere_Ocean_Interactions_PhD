@@ -299,6 +299,23 @@ def regrid_ocean(_ds,  var:str, outdir: str):#, expid: str, first_year:int, last
     return dr
 
 # Function to process data
+name_mapping = {
+    "Global": "global_ocean",
+    "global_ocean": "global_ocean",
+    "global": "global_ocean",
+    "g": "global_ocean",  
+
+    "Atlantic": "atlantic_arctic_ocean",    
+    "atlantic_ocean": "atlantic_arctic_ocean",
+    "atlantic_arctic_ocean": "atlantic_arctic_ocean",
+    "atlantic": "atlantic_arctic_ocean",
+    "a": "atlantic_arctic_ocean",    
+
+    "Indo-Pacific": "indian_pacific_ocean",
+    "indian_pacific_ocean": "indian_pacific_ocean",
+    "indian-pacific": "indian_pacific_ocean",
+    "i": "indian_pacific_ocean"       
+}
 def basin_separation_I(amoc_data, dataset_name, model, model_name):
     atlantic_data = []
     global_data = []
