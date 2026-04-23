@@ -8,10 +8,9 @@ from scipy import integrate
 import matplotlib.pyplot as plt
 from IPython.display import HTML
 from scipy.interpolate import interp1d
-
 #import dask
-# Function for renaming the time variable in IPSL
 
+# Function for renaming the time variable in IPSL
 def to_cftime(time):
     return np.array([
         t if isinstance(t, cftime.DatetimeNoLeap) or isinstance(t, cftime.DatetimeGregorian)
@@ -19,8 +18,7 @@ def to_cftime(time):
         for t in time
     ])
 
-# Rolling average function. 
-
+# Function for rolling average.
 def rolling_average_ts(data, window_size):
 
     time = (data.shape)[0]
@@ -33,10 +31,11 @@ def rolling_average_ts(data, window_size):
 
     return result
 
-# Function for time-average, considering that each month contains a different number of days. By Ada Gjermundsen. 
-
+# Function for time-average, considering that each month contains a different number of days. 
+# Written by Ada Gjermundsen. 
 def yearly_avg(ds):
-    """ Calculates timeseries over yearly averages from timeseries of monthly means
+    """ 
+    Calculates timeseries over yearly averages from timeseries of monthly means
     The weighted average considers that each month has a different number of days.
     
     Parameters
@@ -45,8 +44,7 @@ def yearly_avg(ds):
     
     Returns
     -------
-    ds_weighted : xarray.DataArray with yearly averaged values
-    
+    ds_weighted : xarray.DataArray with yearly averaged values    
     """
     month_length = ds.time.dt.days_in_month
     weights = month_length.groupby("time.year") / month_length.groupby("time.year").sum()
@@ -68,7 +66,6 @@ def yearly_avg(ds):
 
 
 # Function for calculating the atmospheric fluxes
-
 def atm_fluxes_fnc(model, start_y, end_y, experiments, components_atm):    
 
     atm_fluxes_exp = []
@@ -82,7 +79,7 @@ def atm_fluxes_fnc(model, start_y, end_y, experiments, components_atm):
             file_names = sorted(os.listdir(folder_path))
         
             # Using dask to read datasets
-            datasets = [xr.open_dataset(os.path.join(folder_path, file_name), chunks={'time': 100}) for file_name in file_names if file_name.endswith('.nc')]
+            datasets = [xr.open_dataset(os.path.join(folder_path, file_name), chunks={'time': 120}) for file_name in file_names if file_name.endswith('.nc')]
             
             if len(datasets) == 1:   # case where all datafiles are in the same .nc file
                 ds = datasets[0]
@@ -121,7 +118,6 @@ def areaavg(ds, var):
     return _daglob
 
 # Function for calculating the global and hemisphgeric imbalance
-
 def imbalance(model, rsdt, rlut, rsut):
     toa_rad = rsdt-rlut-rsut
 
@@ -158,17 +154,16 @@ def imbalance(model, rsdt, rlut, rsut):
     return glb_imb, nh_imb, sh_imb 
 
 # Function for calculating the heat transport long time
-
 def heat_transport_vect(model, radiation, lat):
     #Radius of the Earth in [m]:
     R=6371000 
 
     integrad_1 = radiation 
 
-    integrad_2 = (-0.5 * np.trapz(integrad_1 * np.cos(np.deg2rad(lat)), x=np.deg2rad(lat), dx = np.deg2rad(2)))[:, np.newaxis] # newaxis so I can perform the addition below
+    integrad_2 = (-0.5 * np.trapz(integrad_1 * np.cos(np.deg2rad(lat)), x=np.deg2rad(lat), dx = np.deg2rad(2)))[:, np.newaxis] 
+    # newaxis so I can perform the addition below
 
     integrad = (2*np.pi*R**2)*np.cos(np.deg2rad(lat))*(integrad_1+integrad_2)
-
 
     #integrad = (2*np.pi*R**2)*np.cos(np.deg2rad(lat))*(radiation) 
     #print(integrad.shape)
@@ -188,7 +183,6 @@ def heat_transport_vect(model, radiation, lat):
     return heat_tr
 
 # Regridding for the atmospheric fluxes
-
 def regridding (model, heat_tr, old_lat, target_lat):
     
     ht_interp_time = []
