@@ -298,6 +298,24 @@ def regrid_ocean(_ds,  var:str, outdir: str):#, expid: str, first_year:int, last
             )
     return dr
 
+def regrid_ocean_conserv(_ds,  var:str, outdir: str):#, expid: str, first_year:int, last_year:int,  tempstorage: str = "/scratch/adagj/noresm_raw/temp/" ):
+   
+    outgrid = xe.util.grid_global(1, 1)
+    
+    grid_weight_path = outdir
+    regrid_mode = "conservative"
+
+    dr = regrid_file(
+                _ds,
+                var=var,
+                outgrid=outgrid,
+                grid_weight_path=grid_weight_path,
+                regrid_mode=regrid_mode,
+                curvilinear=True,
+                periodic=True,
+            )
+    return dr
+
 # Function to process data
 name_mapping = {
     "Global": "global_ocean",
