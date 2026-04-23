@@ -8,5 +8,5 @@
 ### **2.long_CESM2_local.ipynb**
 - **Description:** Calculates the TOA Radiative Imbalance, the Atmospheric, Oceanic and Total Heat Transports for the CESM2 model  
 - **Modules needed:** functions > local_functions > long_CMIP6_functions_local  
-- **Data needed:** cesm2_h_t  
+- **Data needed:** cesm2_h_t_light  
 
