@@ -10,3 +10,5 @@
 - **Modules needed:** functions > local_functions > long_CMIP6_functions_local  
 - **Data needed:** cesm2_h_t_light  
 
+### **3.long_CMIP6_local_Supplementary.ipynb**
+- **Description:** Parts from the other 2 scripts that were not included in the final versions. 
