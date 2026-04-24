@@ -11,7 +11,7 @@
   <tbody>
     <tr>
       <td>1.tas_NIRD.ipynb</td>
-      <td>Calculates the surface aair temperature.</td>
+      <td>Calculates the surface air temperature.</td>
       <td>common_NIRD_functions.py</td>
       <td>ta_data.zip</td>
       <td>data>NIRD_script_data</td>
@@ -45,16 +45,18 @@
       <td>data>NIRD_script_data, ownload from <a href="https://metagrid.esgf-west.org/search">ESGF</a></td>
     </tr>
     <tr>
-      <td>Row 6</td>
-      <td>Data</td>
-      <td>Data</td>
-      <td></td>
+      <td>6.Oc_MOC_NIRD.ipynb</td>
+      <td>calculates the Ocean Meridional Overturning Circulation. Focus on the AMOC and the Deacon cell.</td>
+      <td>common_NIRD_functions, ocean_functions</td>
+      <td>Oc_MOC_data.zip, thetao_z_data</td>
+      <td>data>NIRD_script_data</td>
     </tr>
     <tr>
-      <td>Row 7</td>
-      <td>Data</td>
-      <td>Data</td>
-      <td></td>
+      <td>7.vT_Ocean_NIRD.ipynb</td>
+      <td>Calculates the vT contours and the OHT in the direct way</td>
+      <td>ocean_functions, common_NIRD_functions</td>
+      <td>v_T_data</td>
+      <td>data>NIRD_script_data</td>
     </tr>
     <tr>
       <td>Row 8</td>
