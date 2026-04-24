@@ -1,16 +1,16 @@
 <table>
   <thead>
     <tr>
-      <th>Column 1</th>
-      <th>Column 2</th>
-      <th>Column 3</th>
+      <th>Script Name</th>
+      <th>Needed Modules</th>
+      <th>Needed Data</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>Row 1</td><td>Data</td><td>Data</td></tr>
-    <tr><td>Row 2</td><td>Data</td><td>Data</td></tr>
-    <tr><td>Row 3</td><td>Data</td><td>Data</td></tr>
-    <tr><td>Row 4</td><td>Data</td><td>Data</td></tr>
+    <tr><td>1.tas_NIRD.ipynb</td><td>common_NIRD_functions.py</td><td>ta_data.zip</td></tr>
+    <tr><td>2.ta_NIRD.ipynb</td><td>common_NIRD_functions.py</td><td> </td></tr>
+    <tr><td>3.ua_NIRD.ipynb</td><td>common_NIRD_functions.py</td><td>ua_Amon_CESM2_abrupt-4xCO2_r1i1p1f1_gn_000101-015012.nc</td></tr>
+    <tr><td>4.Atm_MOC_NIRD.ipynb</td><td>common_NIRD_functions.py, Atm_MOC_functions.py</td><td>Data</td></tr>
     <tr><td>Row 5</td><td>Data</td><td>Data</td></tr>
     <tr><td>Row 6</td><td>Data</td><td>Data</td></tr>
     <tr><td>Row 7</td><td>Data</td><td>Data</td></tr>
