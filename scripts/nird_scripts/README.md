@@ -12,7 +12,7 @@
       <td>1.tas_NIRD.ipynb</td>
       <td>common_NIRD_functions.py</td>
       <td>ta_data.zip</td>
-      <td>data/local_data</td>
+      <td>data>local_data</td>
     </tr>
     <tr>
       <td>2.ta_NIRD.ipynb</td>
