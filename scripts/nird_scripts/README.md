@@ -24,7 +24,7 @@
       <td>3.ua_NIRD.ipynb</td>
       <td>common_NIRD_functions.py</td>
       <td>ua_Amon_CESM2_abrupt-4xCO2_r1i1p1f1_gn_000101-015012.nc</td>
-      <td>download from (esgf)[https://metagrid.esgf-west.org/search]</td>
+      <td>download from [esgf](https://metagrid.esgf-west.org/search)</td>
     </tr>
     <tr>
       <td>4.Atm_MOC_NIRD.ipynb</td>
