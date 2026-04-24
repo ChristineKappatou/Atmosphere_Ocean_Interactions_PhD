@@ -60,7 +60,7 @@
     </tr>
     <tr>
       <td>8.OHC_NIRD.ipynb</td>
-      <td>calcuates the Ocean Heat Content (OHC) at different levels</td>
+      <td>Calculates the Ocean Heat Content (OHC) at different levels</td>
       <td>ocean_functions.py</td>
       <td>OHC_data.zip</td>
       <td>data>NIRD_script_data</td>
