@@ -8,7 +8,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr><td>1.tas_NIRD.ipynb</td><td>common_NIRD_functions.py</td><td>ta_data.zip</td>data>local_data </td> </td></tr>
+    <tr><td>1.tas_NIRD.ipynb</td><td>common_NIRD_functions.py</td><td>ta_data.zip</td>data>local_data </td></tr>
     <tr><td>2.ta_NIRD.ipynb</td><td>common_NIRD_functions.py</td><td> </td></tr>
     <tr><td>3.ua_NIRD.ipynb</td><td>common_NIRD_functions.py</td><td>ua_Amon_CESM2_abrupt-4xCO2_r1i1p1f1_gn_000101-015012.nc</td></tr>
     <tr><td>4.Atm_MOC_NIRD.ipynb</td><td>common_NIRD_functions.py, Atm_MOC_functions.py</td><td>Atm_MOC_data.zip, va_Amon_CESM2_abrupt-4xCO2_r1i1p1f1_gn_000101-015012.nc, atm_h_t_local.zip</td></tr>
