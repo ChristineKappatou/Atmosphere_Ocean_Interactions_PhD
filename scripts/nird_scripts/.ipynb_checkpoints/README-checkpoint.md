@@ -59,14 +59,14 @@
       <td>data>NIRD_script_data, download from <a href="https://metagrid.esgf-west.org/search">ESGF</a></td>
     </tr>
     <tr>
-      <td>Row 8</td>
+      <td>8.OHC_NIRD.ipynb</td>
       <td>calcuates the Ocean Heat Content (OHC) at different levels</td>
       <td>ocean_functions.py</td>
       <td>OHC_data.zip</td>
       <td>data>NIRD_script_data</td>
     </tr>
     <tr>
-      <td>Row 9</td>
+      <td>9.tos_NIRD.ipynb</td>
       <td>Calculates the temperature on the ocean surface</td>
       <td>common_NIRD_functions.py, ocean_functions.py</td>
       <td></td>
