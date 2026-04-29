@@ -39,6 +39,8 @@ Updating NIRD with the data you download:
 
 * This requires that you have cloned the repo on local, you're in this folder making the changed and then commit while still in it. 
 
-## <u>Update local:</u>  git pull
+## <u>Update local:</u>  
+
+git pull
 
 * I prefer working from local ad updating the remote repo instead. 
