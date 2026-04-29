@@ -1,4 +1,4 @@
-## Notebook descriptions
+## List of Contents
 
 ### **1.long_CMIP6_local.ipynb**
 - **Description:** Calculates the TOA Radiative Imbalance, the Atmospheric, Oceanic and Total Heat Transports for the NorESM2_LM and IPSL-CM6A-LR models  
