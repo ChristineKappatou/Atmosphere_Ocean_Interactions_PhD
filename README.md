@@ -1,4 +1,4 @@
-### **This repository contains the code for my first project, "Investigating the changes of atmosphere and ocean heat transports under the abrupt-4xCO2 scenario". **
+### **This repository contains the code for my first project, "Investigating the changes of atmosphere and ocean heat transports under the abrupt-4xCO2 scenario".**
 
 ## <u>List of contents:<u>
 
