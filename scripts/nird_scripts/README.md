@@ -1,4 +1,4 @@
-### **List of Contents**
+### **Table of Contents**
 
 <table>
   <thead>
