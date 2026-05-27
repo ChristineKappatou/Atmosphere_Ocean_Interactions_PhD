@@ -6,4 +6,5 @@
 2. **Functions:** contains the modules needed for each script
 3. **Scripts:** contains the scipts from my local and NIRD accounts.
 4. **Tools/regrid:** contains the original of the regridding functions I used, provided by Ada Gjermundsen.
-5. **processes.md:** explains common workflows I followed on NIRD and GH. 
+5. **processes.md:** explains common workflows I followed on NIRD and GH.
+6. **results.zip:** contains the key figures and a presentation of the results
