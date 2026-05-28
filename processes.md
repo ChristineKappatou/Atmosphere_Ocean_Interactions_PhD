@@ -12,7 +12,7 @@ On terminal:
 6. jupyter lab --port=8080 (jupyter lab has to be installed in the environment first)
 7. Open a new tab on local and listen: ssh -L 8080:localhost:8080 chrikap@loginX.nird.sigma2.no, X is the number of the login node you run jupyter on
 8. Open a new tab on browser: http://localhost:8080/
-9. 
+
 *if a token is asked, go to the NIRD tab on terminal and copy paste what comes after this:  http://localhost:8080/lab?token=...
 
 
